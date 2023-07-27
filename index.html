@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fruit Brust</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap" rel="stylesheet">
+
+
+    <style>
+        .lato-font {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- header section -->
+    <header>
+        <!-- navbar section -->
+        <div
+            class="navbar rounded-br-full rounded-tr-full rounded-bl-full rounded-tl-full  bg-[#F85559] max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+            <div class="flex-1">
+                <a class="  text-xl text-center justify-center ">daisyUI</a>
+            </div>
+            <div class="form-control">
+                <div class="input-group">
+                    <input type="text" placeholder="Search…" class="input input-bordered" />
+                    <button class="btn btn-square">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <!-- <div class="flex-none gap-2">
+                <div class="form-control">
+                    <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+                </div> -->
+            <!-- <div class="dropdown dropdown-end">  
+                    <ul tabindex="0"
+                        class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                        <li>
+                            <a class="justify-between">
+                                Profile
+                                <span class="badge">New</span>
+                            </a>
+                        </li>
+                        <li><a>Settings</a></li>
+                        <li><a>Logout</a></li>
+                    </ul> -->
+        </div>
+        </div>
+        </div>
+        <!-- <div class="navbar bg-base-100">
+            <div class="flex-none">
+              <button class="btn btn-square btn-ghost">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+              </button>
+            </div>
+            <div class="flex-1">
+              <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+            </div>
+            <div class="flex-none">
+              <button class="btn btn-square btn-ghost">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
+              </button>
+            </div>
+          </div> -->
+
+    </header>
+    <main>
+        <!-- banner section -->
+        <section>
+
+            <div class="carousel w-full">
+                <!-- slide 1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div>
+                        <h1 class="lato-font text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                    </div>
+                    <div>
+                        <img src="./images/banner1.png" class="w-full" />
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./images/banner2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="./images/banner3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="./images/banner4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Deal of the day -->
+        <div class="flex justify-between max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+            <div>
+                <h1 class="text-5xl mb-12 font-semibold text-left">Deal of the day</h1>
+                <p class="text-xl">Contrary to popular belief, is not simply random text. It has roots in a piece of
+                    classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div>
+                <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl">
+                            <span style="--value:15;"></span>
+                        </span>
+                        days
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl">
+                            <span style="--value:10;"></span>
+                        </span>
+                        hours
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl">
+                            <span style="--value:24;"></span>
+                        </span>
+                        min
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="countdown font-mono text-5xl">
+                            <span style="--value:38;"></span>
+                        </span>
+                        sec
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="flex justify-between max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+            <!-- card 1 -->
+            <div class="card w-75 bg-base-100 shadow-xl">
+                <figure><img src="./images/fruit6.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title justify-center">12.90$ - 18.85$</h2>
+                    <p class="text-center">Apples</p>
+                    <div class="rating justify-center">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <div class="card-actions justify-end">
+                        <!-- Open the modal using ID.showModal() method -->
+                        <p class="text-center text-[#F85559]" onclick="my_modal_1.showModal()">Details</p>
+                        <dialog id="my_modal_1" class="modal">
+                            <form method="dialog">
+                                <div class="card w-96 bg-base-100 shadow-xl">
+                                    <figure class="px-10 pt-10">
+                                        <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                                    </figure>
+                                    <div class="card-body items-center text-center">
+                                        <h2 class="card-title">Apples</h2>
+                                        <p>Professional employees are there for you to pick the most <br> amazing and
+                                            fresh fruits.</p>
+                                        <div class="card-actions">
+                                            <button class="btn">Close</button>
+                                            <button class="btn btn-error">Buy Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class="card w-75 bg-base-100 shadow-xl">
+                <figure><img src="./images/fruit7.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title justify-center">12.90$ - 18.85$</h2>
+                    <p class="text-center">Apples</p>
+                    <div class="rating justify-center">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <div class="card-actions justify-end">
+                        <!-- Open the modal using ID.showModal() method -->
+                        <p class="text-center text-[#F85559]" onclick="my_modal_1.showModal()">Details</p>
+                        <dialog id="my_modal_2" class="modal">
+                            <form method="dialog">
+                                <div class="card w-96 bg-base-100 shadow-xl">
+                                    <figure class="px-10 pt-10">
+                                        <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                                    </figure>
+                                    <div class="card-body items-center text-center">
+                                        <h2 class="card-title">Orange</h2>
+                                        <p>Professional employees are there for you to pick the most <br> amazing and
+                                            fresh fruits.</p>
+                                        <div class="card-actions">
+                                            <button class="btn">Close</button>
+                                            <button class="btn btn-error">Buy Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class="card w-75 bg-base-100 shadow-xl">
+                <figure><img src="./images/fruit8.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title justify-center">12.90$ - 18.85$</h2>
+                    <p class="text-center">Apples</p>
+                    <div class="rating justify-center">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <div class="card-actions justify-end">
+                        <!-- Open the modal using ID.showModal() method -->
+                        <p class="text-center text-[#F85559]" onclick="my_modal_1.showModal()">Details</p>
+                        <dialog id="my_modal_3" class="modal">
+                            <form method="dialog">
+                                <div class="card w-96 bg-base-100 shadow-xl">
+                                    <figure class="px-10 pt-10">
+                                        <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                                    </figure>
+                                    <div class="card-body items-center text-center">
+                                        <h2 class="card-title">Apples</h2>
+                                        <p>Professional employees are there for you to pick the most <br> amazing and
+                                            fresh fruits.</p>
+                                        <div class="card-actions">
+                                            <button class="btn">Close</button>
+                                            <button class="btn btn-error">Buy Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+            </div>
+            <!-- card 4 -->
+            <div class="card w-75 bg-base-100 shadow-xl">
+                <figure><img src="./images/fruit9.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                    <h2 class="card-title justify-center">12.90$ - 18.85$</h2>
+                    <p class="text-center">Apples</p>
+                    <div class="rating justify-center">
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <div class="card-actions justify-end">
+                        <!-- Open the modal using ID.showModal() method -->
+                        <p class="text-center text-[#F85559]" onclick="my_modal_1.showModal()">Details</p>
+                        <dialog id="my_modal_4" class="modal">
+                            <form method="dialog">
+                                <div class="card w-96 bg-base-100 shadow-xl">
+                                    <figure class="px-10 pt-10">
+                                        <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                                    </figure>
+                                    <div class="card-body items-center text-center">
+                                        <h2 class="card-title">Apples</h2>
+                                        <p>Professional employees are there for you to pick the most <br> amazing and
+                                            fresh fruits.</p>
+                                        <div class="card-actions">
+                                            <button class="btn">Close</button>
+                                            <button class="btn btn-error">Buy Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <section>
+
+        </section>
+        <!-- Team section -->
+        <section class="max-w-screen-xl mx-auto px-8 sm:px-10 md:px-16 lg:px-24 py-5 my-10">
+            <div class="hero min-h-screen" style="background-image: url('./images/banner1.png');">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-md">
+                        <div class=" rounded-lg shadow max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+                            <p class="text-5xl font-bold text-center text-gray-800 dark:text-white ">
+                                Meet the team section
+                            </p>
+                            <p class="mb-12 text-sm font-normal text-center text-gray-500 dark:text-gray-200">
+                                Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
+                                Latin literature from 45 BC, making it over 2000 years old.
+                            </p>
+                            <div class="flex flex-col items-center md:flex-row justify-evenly">
+                                <div class="p-4">
+                                    <div class="mb-4 text-center opacity-90">
+                                        <a href="#" class="relative block">
+                                            <img alt="profil" src="./images/member1.png"
+                                                class="mx-auto object-cover rounded-full h-40 w-40 " />
+                                        </a>
+                                    </div>
+                                    <div class="text-center">
+                                        <p class="text-2xl text-gray-800 dark:text-white">
+                                            Awlad Hossain
+                                        </p>
+                                        <p class="text-xl font-light text-gray-500 dark:text-gray-200">
+                                            Fruits Expert
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-center pt-8 mx-auto text-gray-500 border-t border-gray-200 w-44">
+                                        <a href="#">
+                                            <svg width="25" height="25" fill="currentColor"
+                                                class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
+                                                viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="#">
+                                            <svg width="25" height="25" fill="currentColor"
+                                                class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
+                                                viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="#">
+                                            <svg width="30" height="30" fill="currentColor"
+                                                class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
+                                                viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <div class="mb-4 text-center opacity-90">
+                                        <a href="#" class="relative block">
+                                            <img alt="profil" src="./images/member2.png"
+                                                class="mx-auto object-cover rounded-full h-40 w-40 " />
+                                        </a>
+                                    </div>
+                                    <div class="text-center">
+                                        <p class="text-2xl text-gray-800 dark:text-white">
+                                            Safia Chowdhury
+                                        </p>
+                                        <p class="text-xl font-light text-gray-500 dark:text-gray-200">
+                                            Fruits Expert
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-evenly pt-8 mx-auto text-gray-500 border-t border-gray-200 w-44">
+                                        <a href="#">
+                                            <svg width="25" height="25" fill="currentColor"
+                                                class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
+                                                viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="#">
+                                            <svg width="30" height="30" fill="currentColor"
+                                                class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
+                                                viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                                class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
+                                                viewBox="0 0 1792 1792">
+                                                <path
+                                                    d="M896 128q209 0 385.5 103t279.5 279.5 103 385.5q0 251-146.5 451.5t-378.5 277.5q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-119-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-85-13.5q-45 113-8 204-79 87-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-39 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5t-146.5-451.5q0-209 103-385.5t279.5-279.5 385.5-103zm-477 1103q3-7-7-12-10-3-13 2-3 7 7 12 9 6 13-2zm31 34q7-5-2-16-10-9-16-3-7 5 2 16 10 10 16 3zm30 45q9-7 0-19-8-13-17-6-9 5 0 18t17 7zm42 42q8-8-4-19-12-12-20-3-9 8 4 19 12 12 20 3zm57 25q3-11-13-16-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11-16 0-16 11 0 13 17 11 16 0 16-11zm58-10q-2-11-18-9-16 3-14 15t18 8 14-14z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <div class="mb-4 text-center opacity-90">
+                                        <a href="#" class="relative block">
+                                            <img alt="profil" src="./images/member3.png"
+                                                class="mx-auto object-cover rounded-full h-40 w-40 " />
+                                        </a>
+                                    </div>
+                                    <div class="text-center">
+                                        <p class="text-2xl text-gray-800 dark:text-white">
+                                            Rokib Hossain
+                                        </p>
+                                        <p class="text-xl font-light text-gray-500 dark:text-gray-200">
+                                            Fruits Expert
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-evenly pt-8 mx-auto text-gray-500 border-t border-gray-200 w-44">
+                                        <a href="#">
+                                            <svg width="30" height="30" fill="currentColor"
+                                                class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
+                                                viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="#">
+                                            <svg width="30" height="30" fill="currentColor"
+                                                class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
+                                                viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="#">
+                                            <svg width="30" height="30" fill="currentColor"
+                                                class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
+                                                viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="p-4">
+                                    <div class="mb-4 text-center opacity-90">
+                                        <a href="#" class="relative block">
+                                            <img alt="profil" src="./images/member4.png"
+                                                class="mx-auto object-cover rounded-full h-40 w-40 " />
+                                        </a>
+                                    </div>
+                                    <div class="text-center">
+                                        <p class="text-2xl text-gray-800 dark:text-white">
+                                            Chaity
+                                        </p>
+                                        <p class="text-xl font-light text-gray-500 dark:text-gray-200">
+                                            Fruits Expert
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="flex items-center justify-evenly pt-8 mx-auto text-gray-500 border-t border-gray-200 w-44">
+                                        <a href="#">
+                                            <svg width="30" height="30" fill="currentColor"
+                                                class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
+                                                viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="#">
+                                            <svg width="30" height="30" fill="currentColor"
+                                                class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
+                                                viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="#">
+                                            <svg width="30" height="30" fill="currentColor"
+                                                class="text-xl transition-colors duration-200 hover:text-gray-800 dark:hover:text-white"
+                                                viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+            
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+           
+        </section>
+
+    </main>
+    <!-- footer section -->
+    <footer>
+        <footer class="footer footer-center p-10 bg-[#121212] text-white rounded">
+            <div class="flex">
+                <img src="./images/logo.png" alt="">
+                <p class="text-5xl font-bold text-center text-gray-800 dark:text-white ">
+                    Fruit Burst
+                </p>
+            </div>
+            <div class="grid grid-flow-col gap-4">
+                <a class="link link-hover">Home</a>
+                <a class="link link-hover">About Us</a>
+                <a class="link link-hover">Shop</a>
+                <a class="link link-hover">All Fruits</a>
+                <a class="link link-hover">Support</a>
+                <a class="link link-hover">My Account</a>
+            </div>
+            <div>
+                <div class="grid grid-flow-col gap-4">
+                    <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            class="fill-current">
+                            <path
+                                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+                            </path>
+                        </svg></a>
+                    <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            class="fill-current">
+                            <path
+                                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                            </path>
+                        </svg></a>
+                    <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            class="fill-current">
+                            <path
+                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                            </path>
+                        </svg></a>
+                </div>
+            </div>
+        </footer>
+
+    </footer>
+
+</body>
+
+</html>
